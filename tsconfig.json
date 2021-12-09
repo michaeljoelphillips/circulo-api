@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "rootDir": "./",
+    "sourceMap": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "allowJs": false,
+    "checkJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "pretty": false
+  },
+  "ts-node": {
+    "files": true
+  }
+}
