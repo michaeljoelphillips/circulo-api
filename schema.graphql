@@ -1,0 +1,35 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  patients: [Patient!]
+  patient(id: String!): Patient
+}
+
+type Mutation {
+  addPatient(input: AddPatientInput!): Patient
+}
+
+type Patient {
+  ssn: String!
+  birthDate: String!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  benefitsEligibility: BenefitsEligibilityStatus!
+}
+
+enum BenefitsEligibilityStatus {
+  ELIGIBLE
+  INELIGIBLE
+}
+
+input AddPatientInput {
+  ssn: String!
+  birthDate: String!
+  firstName: String!
+  middleName: String!
+  lastName: String!
+}
